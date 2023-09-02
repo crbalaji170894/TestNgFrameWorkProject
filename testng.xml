@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TestFrameworkSuite">
+  <test thread-count="5" name="TestNgTestPractice">
+    <classes>
+      <class name="testng.DependencyTest"/>
+      <class name="testng.TestngAnnotations"/>
+      <class name="testng.InvocationCount"/>
+      <class name="testng.FirstTestNgProgram"/>
+      <class name="testng.PriorityTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
