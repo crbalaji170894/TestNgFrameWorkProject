@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [parallelSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Testparallel(failed)">
+    <classes>
+      <class name="testng.ParallelTestExecution">
+        <methods>
+          <include name="loginWithInValidValues"/>
+          <include name="clickForgotPassword"/>
+          <include name="sampleAlert"/>
+        </methods>
+      </class> <!-- testng.ParallelTestExecution -->
+    </classes>
+  </test> <!-- Testparallel(failed) -->
+</suite> <!-- Failed suite [parallelSuite] -->

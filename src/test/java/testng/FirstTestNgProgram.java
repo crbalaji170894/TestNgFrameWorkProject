@@ -12,12 +12,12 @@ import page.FaceBookLogin;
 
 public class FirstTestNgProgram {
 	BaseClass baseClass = new BaseClass();
-	WebDriver page;
+	WebDriver page=null;
 
 	@BeforeMethod
 	public void lauchChromeBrowser() {
 
-		baseClass.launchChromeBrowser();
+		page = baseClass.launchChromeBrowser();
 
 	}
 
