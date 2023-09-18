@@ -24,9 +24,11 @@ public class ExcelUtils {
 
 		Sheet sheet = workbook.getSheet("test01");
 
-		int lastRowNum = sheet.getLastRowNum();
+//		int lastRowNum = sheet.getLastRowNum();
+		
+		int lastRowNum = sheet.getPhysicalNumberOfRows();
 
-		int lastCellNum = sheet.getRow(0).getLastCellNum();
+		int lastCellNum = sheet.getRow(0).getPhysicalNumberOfCells();
 
 		Object[][] dataTable = null;
 
